@@ -22,6 +22,6 @@ func Open(uri string) error {
 		return fmt.Errorf("don't know how to open things on %s platform", runtime.GOOS)
 	}
 	run = append(run, uri)
-	cmd := exec.Command(run[0], run[0:]...)
+	cmd := exec.Command(run[0], run[1:]...)
 	return cmd.Run()
 }
