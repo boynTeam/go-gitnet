@@ -4,7 +4,7 @@ a simple golang tool to open remote git website by reading git remote configurat
 # Usage
 
 ```sh
-go install github.com/boynTeam/go-gitnet
+go get -u github.com/boynTeam/go-gitnet
 
 cd $GIT_PROJECT_FILE
 
